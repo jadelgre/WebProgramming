@@ -1,37 +1,75 @@
-<!-- Correct html structure including doctype-->
 <!DOCTYPE HTML>
+<!-- Correct html structure including doctype-->
 
-<!--(1) Include a title for your document-->
-<title>Jacob's web page</title>
+<!--  (1) Include an html comment -->
+<!-- this is my personal web page for CSCI445 Unit 1 Part 1-->
 
-<h1>Jacob's web page</h1>
+<head>
+	<!--(1) Include a title for your document-->
+	<title>Jacob's web page</title>
+	<!--(1) Include at least one meta tag-->
+	<meta charset="UTF-8">
+	<meta name="description" content="Jacob's personal page">
+	<meta name="author" content="Jacob Adelgren">
+</head> 
+<body>
+	<h1>Jacob's web page</h1>
 
-<h2>About Me</h2>
-	<p>I am a senior Computer Science Student at Colorado School of Mines.</p>
-<h2>Courses</h2>
-	<p>Computer Science course I've taken at mines include:</p>
-	<ul>
-		<li>CSCI445 Web Programming</li>
-		<li>CSCI410 Elements of Computing Systems</li>
-		<li>CSCI406 Algorithms</li>
-		<li>CSCI341 Computer Organization</li>
-		<li>CSCI273 Intro to Linux</li>
-		<li>CSCI262 Data Structures</li>
-		<li>CSCI261 Programming Concepts</li>
-		<li>CSCI101</li>
-	<ul>
-<!--
-    (2) At least two levels of headers
-    (1) At least one paragraph (probably more)
-    (1) A list (ordered or unordered)
-    (1) At least one code snippet
-    (1) At least one hyperlink to an external site
-    (1) At least one html link to an anchor within the same document
-    (1) A mailto
-    (1) At least one line break or horizontal rule
-    (1) At least one abbreviation
-    (1) At least one text format other than <b> or <i>
-    (1) Include an html comment
-    (1) Include at least one meta tag
-    (1) At least one special entity (e.g., copyright symbol)
--->
+	<h2>Table of Contents</h2>
+		<!-- (1) At least one html link to an anchor within the same document -->
+		<a href="#aboutMe">About Me</a>
+		<a href="#aboutPage">About this page</a>
+		<a href="#projects">My Projects</a>
+
+	<!-- (2) At least two levels of headers -->
+	<h2 id="aboutMe">About Me</h2>
+		<!-- (1) At least one paragraph (probably more) -->
+		<!-- (1) At least one abbreviation -->
+		<p>I am a senior Computer Science Student at <abbr title="Colorado School of Mines">CSM</abbr></p>
+	<h3>Courses</h3>
+		<p>Computer Science course I've taken at mines include:</p>
+		<!-- (1) A list (ordered or unordered) -->
+		<ul>
+			<li>CSCI445 Web Programming</li>
+			<li>CSCI442 Operating Systems</li>
+			<li>CSCI410 Elements of Computing Systems</li>
+			<li>CSCI406 Algorithms</li>
+			<li>CSCI400 Programming Languages</li>
+			<li>CSCI370 Advanced Software Engineering</li>
+			<li>CSCI358 Discrete Mathematics</li>
+			<li>CSCI341 Computer Organization</li>
+			<li>CSCI306 Software Engineering</li>	
+			<li>CSCI273 Intro to Linux</li>
+			<li>CSCI262 Data Structures</li>
+			<li>CSCI261 Programming Concepts</li>
+			<li>CSCI101 Introduction to Computer Science</li>
+		</ul>
+	<!-- (1) At least one line break or horizontal rule -->
+	<hr>
+	<h2 id="projects">My projects</h2>
+		<!-- (1) At least one hyperlink to an external site -->
+		<p>One of my current projects is a JavaScript Pong Clock which displays the current time as the score of a pong game. It can be seen at <a href="http://pongclock.me">pongclock.me</a></p>
+		
+		<!-- (1) At least one code snippet -->
+		<p>All of the graphics are drawn using JavaScript and HTML5 Canvas. Here's an example:</p>
+		<pre><code>
+			this.draw = function() {
+			context.fillStyle = "white";
+			context.beginPath();
+			context.rect(this.x,this.y,this.width,this.height);
+			context.closePath();
+			context.fill();
+			}
+		</code></pre>
+
+	<hr>
+	<h2 id="aboutPage" >About this page</h2>
+		<!-- (1) A mailto -->
+		<p>This page was written for the course CSCI445. If you have any comments or questions please contact me at <a href="mailto:jadelgre@mymail.mines.edu">jadelgre@mymail.mines.edu</a>
+	<hr>
+<footer>
+	<!-- (1) At least one special entity (e.g., copyright symbol) -->
+	<!--   (1) At least one text format other than <b> or <i>-->
+	<p><mark>&copy; Jacob Adelgren</mark></p>	
+</footer>
+</body>
