@@ -1,0 +1,104 @@
+ /*background color (#f4ffe4) for the body
+(1) A complementary color (#333333) for text
+(2) A reasonable sans-serif choice for text. Be sure to use a generic family.
+*/
+body {
+	background-color: #f4ffe4;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*[3~Georgia, serif
+Styling for the header includes:
+*(1) A background color (#d5edb3)
+(3) A logo on the right side
+(1) The company name is centered
+(2) The company name uses a text shadow. I did a 3px shadow below and to the right, with a 5px blur, in color #666.
+(3) The header includes a rounded border. I used color #333333 and a border radius of 15px. The border itself is 1 px. There's a shadow below the header. I did 5px below and to the right, with a 5px blur. Shadow color is #828282.
+*/
+header {
+	font-family: Georgia, serif;
+	background-color: #d5edb3;
+	background-image: url('turtle2.gif');
+	background-position: right;	
+	background-repeat: no-repeat;
+	text-align: center;
+	text-shadow: 3px 3px 5px #666;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 15px;
+	padding: 10px 10px;
+	box-shadow: 5px 5px 5px #828282;
+	
+}
+/*Styling for the nav menu includes:
+(1) A background color (#d5edb3)
+(1) Matching text color and border (#333333)
+(1) Border is 1 px
+(1) Links do not have underlines
+(1) Menu options are displayed in bold
+(2) The entire menu is indented to be visually appealing (~20px)
+(2) The menu "tabs" include some white space between the menu item name and the border.
+*/
+
+nav {
+	text-indent: 20px;
+	padding: 5px 0px 0px 0px;
+}
+
+a {
+	background-color: #d5edb3;
+	border-style: solid;
+	border-color: #333333;
+	border-width: 1px;
+	text-decoration: none;
+	color: #333333;
+	font-weight: bold;
+	padding: 5px;
+}
+
+/*(2) The company name should be in bold whereever it appears.*/
+.company_name {
+	font-weight: bold;
+}
+/*(2) The intro paragraph should be indented, other paragraphs (e.g., under Recent Customers) are not.*/
+#intro {
+	text-indent: 1.5em;
+}
+/*(2) The list of services should have line spacing of 1.5.*/
+#services {
+	line-height: 1.5em;
+}
+/*
+Styling for the "wrapper" and "content"
+(2) The wrapper is centered and takes 80% of the space.
+(1) The background color for the wrapper is white.
+(2) The wrapper should have rounded upper corners (otherwise the edges of the wrapper are visible above the header - try it!)
+(2) There is a minimum width set so that scroll bars will appear if the screen size gets to small. Same with height. I used 600px for the minimum width and 550 px for the minimum height. Try it!
+(2) There is some additional space between the text in the content area and the edge of the enclosing white wrapper.
+*/
+#wrapper {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: white;
+	min-width: 600px;
+	min-height: 500px;
+	border-radius: 15px;
+}
+
+#content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*
+Styling for the company motto includes>
+(2) The company motto is italicized and centered.
+(3) There is a ridge border of color #98bf21 and an extra-wide left margin*/
+.motto {
+	font-style: italic;
+	text-align: center;
+	border-style: ridge;
+	border-color: #98bf21;
+	border-left-width: 2.5em;
+}
