@@ -1,0 +1,35 @@
+#turtle_left {
+	float: left;
+	border: inset;
+	border-width: 4px;
+	margin: 6px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#cat_right {
+	float: right;
+	margin: 3px;
+	border: inset;
+	border-width: 4px;
+	margin: 6px;
+	padding-top: 10%;
+	right: 10%;
+	padding	
+}
+
+.clear-it {
+	clear: both;
+}
+
+.div3 {
+	background-color: cyan;	
+	height: 150px;
+}
+
+.div4 {
+	background-color: magenta;
+	height: 150px;
+}
