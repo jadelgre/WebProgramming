@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!-- Correct html structure including doctype-->
+
+<!--  (1) Include an html comment -->
+<!-- this is my personal web page for CSCI445 Unit 1 Part 1-->
+
+<head>
+	<!--(1) Include a title for your document-->
+	<link rel="stylesheet" type="text/css" href="./aboutJacob.css">
+	<title>Jacob's web page</title>
+	<!--(1) Include at least one meta tag-->
+	<meta charset="UTF-8">
+	<meta name="description" content="Jacob's personal page">
+	<meta name="author" content="Jacob Adelgren">
+</head> 
+<body>
+	<div id="head">
+		<h1 class="header">Jacob's web page</h1>
+
+		<h2 class="header">Table of Contents</h2>
+			<!-- (1) At least one html link to an anchor within the same document -->
+		<ul>
+			<li><a href="#aboutMe">About Me</a></li>
+			<li><a href="#aboutPage">About this page</a></li>
+			<li><a href="#projects">My Projects</a></li>
+		</ul>
+	</div>
+	<!-- (2) At least two levels of headers -->
+	<div id="aboutMe">
+		<h2 class="header">About Me</h2>
+			<!-- (1) At least one paragraph (probably more) -->
+			<!-- (1) At least one abbreviation -->
+			<p>I am a senior Computer Science Student at <abbr title="Colorado School of Mines">CSM</abbr></p>
+		<h3 class="header">Courses</h3>
+			<p>Computer Science course I've taken at mines include:</p>
+			<!-- (1) A list (ordered or unordered) -->
+			<ul>
+				<li>CSCI445 Web Programming</li>
+				<li>CSCI442 Operating Systems</li>
+				<li>CSCI410 Elements of Computing Systems</li>
+				<li>CSCI406 Algorithms</li>
+				<li>CSCI400 Programming Languages</li>
+				<li>CSCI370 Advanced Software Engineering</li>
+				<li>CSCI358 Discrete Mathematics</li>
+				<li>CSCI341 Computer Organization</li>
+				<li>CSCI306 Software Engineering</li>	
+				<li>CSCI273 Intro to Linux</li>
+				<li>CSCI262 Data Structures</li>
+				<li>CSCI261 Programming Concepts</li>
+				<li>CSCI101 Introduction to Computer Science</li>
+			</ul>
+	</div>
+	<!-- (1) At least one line break or horizontal rule -->
+	<div id="projects">
+		<h2 class="header">My projects</h2>
+			<!-- (1) At least one hyperlink to an external site -->
+			<!-- (1) At least one code snippet -->
+			<p>One of my current projects is a browser based game. All of the graphics are drawn using JavaScript and HTML5 Canvas. Here's an example of some of the code involved:</p>
+			<pre><code>this.draw = function() {
+	context.fillStyle = "white";
+	context.beginPath();
+	context.rect(this.x,this.y,this.width,this.height);
+	context.closePath();
+	context.fill();
+	}
+	</code></pre>
+	</div>
+	
+	<div id="aboutPage">
+		<h2 class="header">About this page</h2>
+			<!-- (1) A mailto -->
+			<p>This page was written for the course CSCI445. If you have any comments or questions please contact me at <a href="mailto:jadelgre@mymail.mines.edu">jadelgre@mymail.mines.edu</a>
+	</div>
+<footer>
+	<!-- (1) At least one special entity (e.g., copyright symbol) -->
+	<!--   (1) At least one text format other than <b> or <i>-->
+	<p><mark>&copy; Jacob Adelgren</mark></p>	
+</footer>
+</body>

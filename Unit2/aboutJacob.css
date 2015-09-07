@@ -1,0 +1,50 @@
+/*(2) Style one or more aspects of a div*/
+
+/*(4) Explore the CSS3 tutorials and use at least one new CSS3 feature. Put a comment in the top of your CSS file so the grader knows what feature you used.
+CSS3 feature used: border-radius for rounded corners */
+
+html {
+	/*(2) A repeating background image*/
+	background-image: url('http://static3.depositphotos.com/1000635/110/i/950/depositphotos_1108913-Dollars-seamless-background..jpg');
+	background-repeat: repeat;
+}
+
+/*(2) At least two elements with specified fonts*/
+body {
+	font-family: Arial, Helvetica, Sans-serif;
+	border-radius: 10px;
+	opacity: .9;
+}
+
+body > * {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	background-color: white;
+	max-width: 600px;
+}
+
+code {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10pt;
+	background-color: lavender;
+}
+
+/*(2)Style one or more aspects of an element with a class selector*/
+.header {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+	padding-left: 20px;
+	border-bottom: solid;
+	border-width: 1px;
+}
+
+/*(2) Style one or more aspects of an element with an id selector*/
+#aboutMe, #head, #aboutPage, #projects,footer {
+	padding-left: 15px;
+	padding-right: 15px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
