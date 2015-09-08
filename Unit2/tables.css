@@ -1,0 +1,27 @@
+
+table {
+	/* collapse overlapping borders */
+	border-collapse: collapse;
+	border-width: 3px;
+	border: solid;
+}
+
+/* add borders to all table elements*/
+tr, td {
+	border: solid;
+	border-width: 1px;
+}
+
+td {
+	/* pad the cells so the text isn't against borders*/
+	padding: 4px;
+}
+
+/* header formatting */
+th {
+	font-size: 1.2em;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 3px;
+	border: solid;
+	background-color: lavender;
+}
