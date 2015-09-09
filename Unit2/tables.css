@@ -1,15 +1,18 @@
 
+caption {
+	padding-bottom: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
 table {
 	/* collapse overlapping borders */
 	border-collapse: collapse;
 	border-width: 3px;
 	border: solid;
-}
-
-/* add borders to all table elements*/
-tr, td {
-	border: solid;
-	border-width: 1px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 td {
@@ -25,3 +28,44 @@ th {
 	border: solid;
 	background-color: lavender;
 }
+
+/* border the schedule table */
+#mySchedule {
+	border: solid;
+}
+
+/* border the table header cells 
+#mySchedule th {
+	border: solid;
+	border-width: 1px;
+}*/
+
+/* border all cells in the schedule table */
+#mySchedule td, #mySchedule th {
+	border: solid;
+	border-width: 1px;
+}
+
+#studyGroup th {
+	background-color: navajowhite;
+}
+
+#studyGroup tfoot:last-of-type {
+	background-color: cyan;
+	border: none;
+}
+
+#refreshments {
+	border-color: blue;
+}
+
+#refreshments tr:nth-child(odd) {
+	background: cyan;
+}
+
+#refreshments th {
+	border-color: blue;
+	background-color: blue;
+	color: white;
+}
+
