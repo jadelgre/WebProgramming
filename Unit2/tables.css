@@ -9,7 +9,6 @@ table {
 	/* collapse overlapping borders */
 	border-collapse: collapse;
 	border-width: 3px;
-	border: solid;
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -17,7 +16,7 @@ table {
 
 td {
 	/* pad the cells so the text isn't against borders*/
-	padding: 4px;
+	padding: 4px 10px; /* 4px top/bottom, 10px left/right */
 }
 
 /* header formatting */
@@ -25,8 +24,6 @@ th {
 	font-size: 1.2em;
 	font-family: Helvetica, Arial, sans-serif;
 	padding: 3px;
-	border: solid;
-	background-color: lavender;
 }
 
 /* border the schedule table */
@@ -34,11 +31,9 @@ th {
 	border: solid;
 }
 
-/* border the table header cells 
 #mySchedule th {
-	border: solid;
-	border-width: 1px;
-}*/
+	background-color: lavender;
+}
 
 /* border all cells in the schedule table */
 #mySchedule td, #mySchedule th {
@@ -46,17 +41,38 @@ th {
 	border-width: 1px;
 }
 
-#studyGroup th {
+#studyGroup thead tr td {
 	background-color: navajowhite;
+	border: solid;
+	border-color: white;
+	text-align: center;	
 }
 
-#studyGroup tfoot:last-of-type {
+#studyGroup tbody tr:first-of-type {
+	font-weight: bold;
+}
+
+#studyGroup tbody tr {
+	border-bottom: dashed;
+	border-width: 1px;
+}
+
+#studyGroup tbody tr:last-of-type {
+	border-bottom: none;
+}
+
+#studyGroup tfoot td {
 	background-color: cyan;
-	border: none;
+	text-align: center;
+	color: blue;
+	border: solid;
+	border-color: white;
 }
 
 #refreshments {
+	border: solid;
 	border-color: blue;
+	width: 300px;
 }
 
 #refreshments tr:nth-child(odd) {
@@ -67,5 +83,11 @@ th {
 	border-color: blue;
 	background-color: blue;
 	color: white;
+}
+
+#refreshements tr {
+	border: solid;
+	border-width: 1px;
+	border-color: blue;
 }
 
