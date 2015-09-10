@@ -1,0 +1,27 @@
+body {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 800px;
+    background-color:aliceblue;
+}
+
+form{
+    border: solid;
+    border-color: gray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label, legend {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold;
+}
+
+input, select, datalist {
+    margin-top:10px;
+}
+
+h1 {
+    border-bottom: solid;
+    color:royalblue;
+}

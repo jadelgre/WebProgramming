@@ -7,10 +7,77 @@
 
 <body>
 	<h1>About Me</h1>
-	<div id="personalInfo">
-
-	</div>
-	<div id="personalPreferences">
-
-	</div>
+	<form>
+		<div id="personalInfo">
+			<label for="name">Name:</label>
+			<input type="text" name="name" placeholder="Last, First">
+			<br>
+			<label for="email">Email:</label>
+			<input type="text" name="email" autocomplete="on">
+			<br>
+			<label for="phone">Phone:</label>
+			<input type="tel" name="phone" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}'>
+			<br>
+			<label for="Username">Username:</label>
+			<input type="text" name="Username" size="10" maxlength="10">
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" name="password" size="10">
+		</div>
+		<div id="personalPreferences">
+			<fieldset>
+				<legend>Do you like:</legend>
+				<input type="checkbox" name="pancakes" value="pancakes" checked>Pancakes? Yeah I like pancakes!
+				<br>
+				<input type="checkbox" name="waffles" value="waffles">Waffles? Yeah I like Waffles!
+				<br>
+				<input type="checkbox" name="frenchToast" value="frenchToast">French Toast? Yeah I like French Toast!
+				<br>
+			</fieldset>
+			<label for="animal">What is your favorite animal?</label>
+			<br>
+			<input type="radio" name="animal" value="dog">Dogs
+			<br>
+			<input type="radio"	name="animal" value="cat">Cats
+			<br>
+			<label for="about">Describe yourself:</label>
+			<br>
+			<textarea name="about" rows="6" columns="20" wrap="soft"></textarea>
+			<br>
+			<label>Select a getaway car:</label>
+			<br>
+			<select multiple="true" size="3">
+				<option value="Subaru">Subaru</option>
+  				<option value="jeep">Jeep</option>
+  				<option value="Toyota">Toyota</option>
+  				<option value="royce">Rolls Royce</option>
+  				<option value="hummer">Hummer</option>
+  				<option value="Bently">Bently</option>
+			</select>
+			<br>
+			<label for="sports">Select a sport</label>
+			<br>
+			<input list="sports" name="sports">
+			<datalist id="sports">
+   				<option value="Skiing">
+   				<option value="Snowboarding">
+   				<option value="Biking">
+   			</datalist>
+   			<br>
+   			<label>How many hours do you usually sleep? 0-10 </label>
+   			<br>
+   			<input type="number" min="0" max="12" step="1" value="6">
+   			<br>
+   			<label>Which side, left, or right?</label>
+   			<br>
+			<input type="range" min="0" max="10" step="10">
+			<br>
+			<label>Choose a date:</label>
+			<br>
+			<input type="date" name="date">
+			<br>
+		</div>
+		<input type="submit" value="Submit">
+		<input type="reset" value = "Reset">
+	</form>
 </body>
