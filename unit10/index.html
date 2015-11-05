@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<head>
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="./script.js" type="text/Javascript"></script>
+	<!-- Bootstrap - Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Quiz</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-3" id="sidebar">
+				<h4>Questions attempted:</h4>
+				<ol></ol>
+			</div>
+			<div class="col-sm-9">
+				<h4>Question:</h4>
+				<p class="qaBox" id="questionBox"></p>
+				<h4>Answer:</h4>
+				<div class="qaBox">
+					<form action="">
+						<input type="radio" name="answer" value="true">True<br>
+						<input type="radio" name="answer" value="false">False
+					</form>
+					<input type="submit" value="Submit" class="btn btn-primary">
+				</div>
+				<div id="buttons">
+					<div class="button">C++</div>
+					<div class="button">Java</div>
+					<div class="button">Javascript</div>
+					<div class="button">Ruby</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

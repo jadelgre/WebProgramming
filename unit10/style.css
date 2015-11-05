@@ -1,0 +1,39 @@
+h1 {
+	border-bottom: solid 1px black;
+}
+
+#sidebar{
+	background-color: lightgray;
+	border-radius: 4px;
+}
+
+.qaBox{
+	background-color: lightgray;
+	//margin-left: 10px;
+	//margin-right: 10px;
+	padding: 2%;
+	border-radius: 2px;
+}
+#questionBox {
+	height: 175px;
+}
+
+#buttons>div{
+	display: inline-block;
+	background-color:aliceblue;
+	border: solid 1px black;
+	border-radius: 2px;
+	width: 22%;
+	margin: 1%;
+	padding: 1%;
+	text-align: center;
+}
+
+#buttons{
+	width: 100%;
+}
+
+.highlighted{
+	font-weight: bold;
+	background-color: cyan;
+}
